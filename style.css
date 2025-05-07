@@ -1,0 +1,206 @@
+ .btn {
+    text-decoration: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.4);
+    transition: all 0.3s ease;
+    }
+  
+  
+   .btn:hover {
+    background-color: #ff5252;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.6);
+    } 
+  
+  
+  /* ------------------------------------------------------------------------------------------------------------------ */
+  
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('home.png') ;
+    background-size: cover;
+    background-position:center;
+    color: white;
+}
+
+.hero-content {
+    padding: 0 2rem; 
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translatex(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+  
+  
+   .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    }
+  
+  
+   .hero-content p {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    }
+  
+  
+  /* ------------------------------------------------------------------------------------------------------------------------ */
+.about-us,
+.our-history,
+.features{
+    padding: 7rem ;
+  }
+  
+  .about-us h2,
+  .our-history h2,
+  .features h2,
+  .reviews h2{
+    font-size: 3.5rem;
+    color: #000000d4;
+    text-align: center;
+    margin-bottom: 2rem;
+    }
+  
+  
+    .content-wrapper{
+    font-size: 1.2rem;
+    color: rgba(31, 31, 31, 0.748);
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 15px;
+    padding: 4rem;
+    transition: all 0.3s ease;
+    }
+  
+  
+ 
+    .content-wrapper:hover{
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+      transform: scale(1.03);
+    }
+  
+  
+    .about-us h2::after,
+    .our-history h2::after,
+    .features h2::after,
+    .reviews h2::after{
+    content: "";
+    display: block;
+    width: 15%;
+    height: 5px;
+    background-color:rgba(253, 79, 79);
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    }
+  
+  
+  /* --------------------------------------------------------------------------------------------------------------------------- */
+  
+  .features-grid,
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 3rem;
+    text-align: center;
+    }
+
+    .feature,
+    .review{
+        padding: 3rem 2rem;
+        background-color: #fff;
+        border-radius: 15px;
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+
+   .features i {
+    font-size: 3rem;
+    color: #ff6b6b;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    }
+
+    .feature:hover i{
+        transform: scale(1.1);
+    }
+
+    .feature:hover,
+    .review:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.349);
+    }
+
+    .feature h3 {
+        font-size: 1.5rem;
+        color: #333;
+    }
+    
+    .feature p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+  
+  
+  
+  /* ---------------------------------------------------------------------------------------------------------------------------------- */
+    
+
+  .review-grid {
+    margin-left: 40px;
+}
+
+.reviews {
+    padding: 3rem;
+}
+  
+
+
+
+.stars {
+    color: #ffd700;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.review p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.review h4 {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+  
+  
+  /*------------------------------------------------------------------------------------------------------------------ */
+  
